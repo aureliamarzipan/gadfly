@@ -1,0 +1,167 @@
+:root {
+    --text-color: #100406;
+    --link-color-base: #36a9c0;
+    --link-color-hover: #3682c0;
+
+    --nav-color: #7faf6c;
+    --background-color: #f5fdf0;
+    --primary-color: #84de29;
+    --accent-color: #8bec84;
+    --nav-highlight-color: #ae4ffa;
+    --table-color-one: hsl(319, 70%, 72%, 20%);
+    --table-color-two: hsl(237, 30%, 72%, 20%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-color);
+}
+
+html {
+    max-width: 100%;
+}
+
+img {
+    padding: 2em;
+}
+
+nav img {
+    padding: 0;
+}
+
+main {
+    background-color: var(--background-color);
+    padding: 2em;
+}
+
+header {
+    font-size: xx-large;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+/* nav */
+nav {
+    padding: 1em;
+}
+
+nav, header {
+    text-align: center;
+    width: 100%;
+    background-color: var(--nav-color);
+}
+
+html {
+    background-color: var(--nav-color);
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--nav-highlight-color);
+}
+
+nav a {
+    display: inline-block;
+    font-size: xx-large;
+    color: white;
+}
+
+nav a.activePage {
+    color: black;
+}
+
+a {
+    color: var(--link-color-base);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+/* form things */
+.form p {
+    text-indent: 0;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label[for^="txt"] {
+    display: block;
+    padding-bottom: .5em;
+}
+
+input[type=text], input[type=email], select {
+    width: 20em;
+    padding: 1em;
+    border: .1em solid var(--primary-color);
+    background-color: white;
+    border-radius: .5em;
+}
+
+input[type=submit] {
+    width: 10em;
+    height: 4em;
+    background-color: var(--link-color-base);
+    color: white;
+    margin: 2em 0;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+ input[type=submit]:hover {
+    background-color: var(--link-color-hover);
+}
+
+/* maxwidth */
+p {
+    max-width: 70ch;
+}
+
+.news p {
+    max-width: 50%;
+}
+
+footer a {
+    margin: 2em;
+    color: white;
+}
+
+td {
+    padding: 2em;
+    width: fit-content;
+    border-top: thin solid; 
+    border-bottom: thin solid;
+    font-size: large;
+}
+
+table td:first-child {
+     border-left: thin solid;
+}
+
+table td:last-child {
+     border-right: thin solid;
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: solid;
+    border-color: black;
+    border-collapse: collapse;
+}

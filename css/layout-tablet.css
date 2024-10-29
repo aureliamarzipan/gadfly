@@ -1,0 +1,13 @@
+main {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+main > h1, main > h2 {
+    grid-column: 1/1;
+}
+
+#form-section {
+    grid-column: 1/1;
+}
+
